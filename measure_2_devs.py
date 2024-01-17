@@ -37,9 +37,6 @@ with open(outFileName, mode='a+', newline='') as file:
 
     while True:
         value = input("Введите значение: ")
-        if value == "":
-            break
-
         measV = dmmVolts.takeMeasurement()
         measA = dmmAmpers.takeMeasurement()
         log.info('measurement Volts = {measV}, measurement Current = {measA}')
